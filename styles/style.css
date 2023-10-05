@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: var(--background-image, url(../images/cover-image-light.png));
   color: var(--text-color, #353430);
 
 }

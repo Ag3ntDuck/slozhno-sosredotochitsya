@@ -6,22 +6,21 @@
 
 .page.theme_dark {
   --color-header-title: #DB00FF;
-  --background-image: url(../images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
   --text-color: #F1B2CE;
   --background-color: #FF0070;
   --paragraph-text-color: #FF0070;
   --lesser-paragraph-text-color: #000028;
-  --button-hover-light: none;
   --active-button: #FF0070;
   --recorder-visibility: unset;
-  --button-hover: red;
+  --button-hover: #353430;
   --corner-color: #FF0070;
 }
 
 @media (prefers-color-scheme: dark) {
   .page {
     --color-header-title: #DB00FF;
-    --background-image: url(../images/cover-image-dark.png);
+    background-image: url(../images/cover-image-dark.png);
     --text-color: #F1B2CE;
     --background-color: #FF0070;
     --paragraph-text-color: #FF0070;
@@ -29,7 +28,7 @@
     --button-hover-light: none;
     --active-button: #FF0070;
     --recorder-visibility: unset;
-    --button-hover: red;
+    --button-hover: #353430;
     --corner-color: #FF0070;
   }
 }
