@@ -14,6 +14,22 @@
   --button-hover: rgba(50, 49, 45, 0.40);
   --active-button: #000028;
   --button-hover-light: none;
-  --recorder-visibility: none;
-  
+  --recorder-visibility: none; 
+  --corner-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --color-header-title: #FFC2E6;
+    --background-image: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --background-color: #ff8dcb;
+    --paragraph-text-color: #353430;
+    --lesser-paragraph-text-color: #353430;
+    --button-hover: rgba(50, 49, 45, 0.40);
+    --active-button: #000028;
+    --button-hover-light: none;
+    --recorder-visibility: none; 
+    --corner-color: #353430;
+  }
 }
