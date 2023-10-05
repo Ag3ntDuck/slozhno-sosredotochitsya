@@ -7,8 +7,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: var(--background-image);
-  color: var(--text-color);
+  background-image: var(--background-image, url(../images/cover-image-light.png));
+  color: var(--text-color, #353430);
 
 }
 
@@ -28,7 +28,7 @@
   text-align: center;
   border: none;
   padding: 3px 14px;
-  color: var(--paragraph-text-color);
+  color: var(--paragraph-text-color, #353430);
   font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-weight: 400;
   font-size: 18px;
@@ -45,7 +45,7 @@
 
 .header__title {
   align-self: center;
-  color: var(--color-header-title);
+  color: var(--color-header-title, #FFC2E6);
   font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   text-shadow: 4px 4px 0px #FF0070;
   font-family: IBM Plex Mono;
@@ -74,7 +74,7 @@
   margin-left: 50%;
   margin-top: 6%;
   /* 130% */
-  background-color: var(--background-color);
+  background-color: var(--background-color, #ff8dcb);
   height: fit-content;
 }
 
@@ -159,14 +159,14 @@
   font-weight: 700;
   line-height: 23.4px;
   /* 130% */
-  color: var(--lesser-paragraph-text-color);
-  background-color: var(--background-color);
+  color: var(--lesser-paragraph-text-color, #353430);
+  background-color: var(--background-color, #ff8dcb);
 
 }
 
 .title__paragraph_property {
   font-family: IBM Plex Mono;
-  color: var(--paragraph-text-color);
+  color: var(--paragraph-text-color, #353430);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -175,22 +175,22 @@
 }
 
 .paragraph_property__lighter-weight {
-  color: var(--lesser-paragraph-text-color);
+  color: var(--lesser-paragraph-text-color, #353430);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
   /* 130% */
-  background-color: var(--background-color);
+  background-color: var(--background-color, #ff8dcb);
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
 .decorated-zone::before {
   content: "";
-  border-top: 1px solid var(--corner-color);
-  border-right: 1px solid  var(--corner-color);
+  border-top: 1px solid var(--corner-color, #353430);
+  border-right: 1px solid  var(--corner-color, #353430);
   width: 25px;
   height: 25px;
   display: block;
@@ -202,8 +202,8 @@
 
 .decorated-zone::after {
   content: "";
-  border-left: 1px solid var(--corner-color);
-  border-bottom: 1px solid var(--corner-color);
+  border-left: 1px solid var(--corner-color, #353430);
+  border-bottom: 1px solid var(--corner-color, #353430);
   width: 25px;
   height: 25px;
   display: block;
@@ -223,8 +223,8 @@
 
 .decorated-zone__footer::before {
   content: "";
-  border-top: 1px solid var(--corner-color);
-  border-right: 1px solid var(--corner-color);
+  border-top: 1px solid var(--corner-color, #353430);
+  border-right: 1px solid var(--corner-color, #353430);
   width: 25px;
   height: 25px;
   display: block;
@@ -236,8 +236,8 @@
 
 .decorated-zone__footer::after {
   content: "";
-  border-left: 1px solid var(--corner-color);
-  border-bottom: 1px solid var(--corner-color);
+  border-left: 1px solid var(--corner-color, #353430);
+  border-bottom: 1px solid var(--corner-color, #353430);
   width: 25px;
   height: 25px;
   display: block;
@@ -297,7 +297,7 @@ img {
 
 .footer__title {
   text-align: center;
-  color: var(--color-header-title);
+  color: var(--color-header-title, #FFC2E6);
   text-shadow: 2px 2px 0px #FF0070;
   font-family: IBM Plex Mono;
   font-size: 157px;
@@ -310,26 +310,26 @@ img {
 }
 
 .link {
-  text-shadow: 2px 2px var(--background-color);
+  text-shadow: 2px 2px var(--background-color, #ff8dcb);
   text-decoration: none;
 }
 
 .link:hover {
-  text-decoration-color: var(--text-color);
+  text-decoration-color: var(--text-color, #353430);
   border-bottom: 1px solid;
 }
 
 .link:focus {
-  outline: 1px solid var(--text-color);
+  outline: 1px solid var(--text-color, #353430);
   outline-offset: 0.3px;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-hover);
+  outline: 1px solid var(--button-hover, #FF0070);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--active-button)
+  border: 1px solid var(--active-button, #000028)
 }
 
 .header__theme-menu-button_active:hover {
@@ -352,7 +352,7 @@ img {
   border-radius: 50%;
   background-color: #FF0070;
   box-shadow: 0 0 4px 2px #FF0070;
-  display: var(--recorder-visibility);
+  display: var(--recorder-visibility, none);
 }
 
 .recorder::after {
@@ -370,5 +370,5 @@ img {
   letter-spacing: 0em;
   text-align: center;
 
-  display: var(--recorder-visibility);
+  display: var(--recorder-visibility, none);
 }
