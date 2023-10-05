@@ -18,7 +18,7 @@
   --corner-color: #353430;
 }
 
-@media (prefers-color-scheme: light) {
+@media (not (prefers-color-scheme: dark)) {
   .page {
     --color-header-title: #FFC2E6;
     --background-image: url(../images/cover-image-light.png);
