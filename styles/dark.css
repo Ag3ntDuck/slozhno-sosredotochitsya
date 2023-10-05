@@ -15,6 +15,7 @@
   --recorder-visibility: unset;
   --button-hover: #353430;
   --corner-color: #FF0070;
+  --page-background-color: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,10 +26,10 @@
     --background-color: #FF0070;
     --paragraph-text-color: #FF0070;
     --lesser-paragraph-text-color: #000028;
-    --button-hover-light: none;
     --active-button: #FF0070;
     --recorder-visibility: unset;
     --button-hover: #353430;
     --corner-color: #FF0070;
+    --page-background-color: #000028;
   }
 }

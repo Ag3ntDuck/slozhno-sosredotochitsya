@@ -15,6 +15,7 @@
   --active-button: #000028;
   --recorder-visibility: none; 
   --corner-color: #353430;
+  --page-background-color: #FFF1F7;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,8 +28,8 @@
     --lesser-paragraph-text-color: #353430;
     --button-hover: #FF0070;
     --active-button: #000028;
-    --button-hover-light: none;
     --recorder-visibility: none; 
     --corner-color: #353430;
+    --page-background-color: #FFF1F7;
   }
 }
