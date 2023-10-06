@@ -368,3 +368,46 @@ img {
 
   display: var(--recorder-visibility, none);
 }
+
+@media (max-width: 768px) {
+  .section-reduced {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+ .section-reduced__food {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+ }
+}
+
+@media (max-width: 768px) {
+  .section-reduced__gadgets {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-reduced__multitasking {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__theme-menu-list {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 148px;
+  }
+}
