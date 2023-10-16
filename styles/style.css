@@ -2,7 +2,7 @@
 
 .page {
   max-width: 1024px;
-  background-color: var(--page-background-color, #FFF1F7);
+  background-color: var(--page-background-color, #fff1f7);
   background-repeat: no-repeat;
   background-size: auto 100vh;
   background-position-x: center;
@@ -25,7 +25,13 @@
   border: none;
   padding: 3px 14px;
   color: var(--paragraph-text-color, #353430);
-  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -37,8 +43,14 @@
 
 .header__title {
   align-self: center;
-  color: var(--color-header-title, #FFC2E6);
-  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
+  color: var(--color-header-title, #ffc2e6);
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   text-shadow: var(--text-shadow);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
@@ -56,7 +68,13 @@
 
 .header__text {
   color: #353430;
-  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -82,19 +100,21 @@
   margin: 0 20px;
 }
 
-
 .text {
-  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
-  ;
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
   /* 130% */
   margin-top: 10px;
-
 }
-
 
 .section-concentrate__dopamine {
   grid-column-start: 2;
@@ -152,7 +172,6 @@
   /* 130% */
   color: var(--lesser-paragraph-text-color, #353430);
   background-color: var(--background-color, #ff8dcb);
-
 }
 
 .title__paragraph_property {
@@ -181,7 +200,7 @@
 .decorated-zone::before {
   content: "";
   border-top: 1px solid var(--corner-color, #353430);
-  border-right: 1px solid  var(--corner-color, #353430);
+  border-right: 1px solid var(--corner-color, #353430);
   width: 25px;
   height: 25px;
   display: block;
@@ -238,7 +257,6 @@
   left: 20px;
 }
 
-
 .section-recommendations-pictures {
   margin-top: 80px;
 }
@@ -284,16 +302,14 @@ img {
 
 .footer__title {
   text-align: center;
-  color: var(--color-header-title, #FFC2E6);
-  text-shadow: 2px 2px 0px #FF0070;
+  color: var(--color-header-title, #ffc2e6);
+  text-shadow: 2px 2px 0px,var(--text-shadow);
   font-family: IBM Plex Mono;
   font-size: 157px;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
   /* 129.525px */
-
-
 }
 
 .link {
@@ -312,11 +328,11 @@ img {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-hover, #FF0070);
+  outline: 1px solid var(--button-hover, #ff0070);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--active-button, #000028)
+  border: 1px solid var(--active-button, #000028);
 }
 
 .header__theme-menu-button_active:hover {
@@ -337,20 +353,26 @@ img {
   min-width: 9px;
   min-height: 9px;
   border-radius: 50%;
-  background-color: #FF0070;
-  box-shadow: 0 0 4px 2px #FF0070;
+  background-color: #ff0070;
+  box-shadow: 0 0 4px 2px #ff0070;
   display: var(--recorder-visibility, none);
 }
 
 .recorder::after {
   content: "REC";
   position: absolute;
-  
+
   top: 0;
   right: 28px;
-  color: #FF0070;
+  color: #ff0070;
 
-  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -367,12 +389,11 @@ img {
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
   }
 
- .section-reduced__food {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-
- }
+  .section-reduced__food {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 
   .section-reduced__gadgets {
     grid-row-start: 4;
@@ -401,12 +422,7 @@ img {
   .header__title {
     font-size: 120px;
   }
-
 }
-
-
-
-
 
 @media (max-width: 375px) {
   .header {

@@ -5,62 +5,56 @@
 */
 
 .page.theme_light {
-  --color-header-title: #FFC2E6;
+  --color-header-title: #ffc2e6;
   background-image: url(../images/cover-image-light.png);
   --text-color: #353430;
   --background-color: #ff8dcb;
   --paragraph-text-color: #353430;
   --lesser-paragraph-text-color: #353430;
-  --button-hover: #FF0070;
+  --button-hover: #ff0070;
   --active-button: #000028;
   --recorder-visibility: none;
   --corner-color: #353430;
-  --page-background-color: #FFF1F7;
-  --text-shadow: 4px 4px 0px #FF0070;
+  --page-background-color: #fff1f7;
+  --text-shadow: 4px 4px 0px #ff0070;
 }
 
 @media (prefers-color-scheme: light) {
   .page {
-    --color-header-title: #FFC2E6;
+    --color-header-title: #ffc2e6;
     background-image: url(../images/cover-image-light.png);
     --text-color: #353430;
     --background-color: #ff8dcb;
     --paragraph-text-color: #353430;
     --lesser-paragraph-text-color: #353430;
-    --button-hover: #FF0070;
+    --button-hover: #ff0070;
     --active-button: #000028;
     --recorder-visibility: none;
     --corner-color: #353430;
-    --page-background-color: #FFF1F7;
+    --page-background-color: #fff1f7;
   }
 }
 
-
-
-
-
-@media  (width > 768px) {
- 
-    .page.theme_light {
-      --text-shadow: 4px 4px 0px #FF0070;
-    }
+@media (width > 768px) {
+  .page.theme_light {
+    --text-shadow: 4px 4px 0px #ff0070;
   }
- 
-  @media (width <= 768px) {
-    .page.theme_light {
-      --text-shadow:  4px 4px 0px #FF8DCB;
-     }
-  
+}
+
+@media (width <= 768px) {
+  .page.theme_light {
+    --text-shadow: 4px 4px 0px #ff8dcb;
   }
-  
-  @media (prefers-color-scheme: light) and (width > 768px) {
-    .page {
-      --text-shadow: 4px 4px 0px #FF0070;
-    }
+}
+
+@media (prefers-color-scheme: light) and (width > 768px) {
+  .page {
+    --text-shadow: 4px 4px 0px #ff0070;
   }
-  
-  @media (prefers-color-scheme: light) and (width <= 768px) {
-    .page {
-      --text-shadow:  4px 4px 0px #FF8DCB;
-     }
+}
+
+@media (prefers-color-scheme: light) and (width <= 768px) {
+  .page {
+    --text-shadow: 4px 4px 0px #ff8dcb;
   }
+}
