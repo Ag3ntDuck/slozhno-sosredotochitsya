@@ -30,13 +30,9 @@
   font-size: 18px;
   font-style: normal;
   line-height: 18px;
-  text-align: center;
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-}
-
-.header__theme-menu {
 }
 
 .header__title {
@@ -44,7 +40,6 @@
   color: var(--color-header-title, #FFC2E6);
   font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   text-shadow: 4px 4px 0px #FF0070;
-  font-family: IBM Plex Mono;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
@@ -281,10 +276,6 @@
   grid-column-end: 4;
 }
 
-.books {
-
-}
-
 img {
   width: 100%;
   object-fit: cover;
@@ -451,6 +442,8 @@ img {
 
   .header__text {
     margin-top: 50px;
+    margin-left: 0;
+    width: 100%;
   }
 
   .recorder {
@@ -460,11 +453,6 @@ img {
 
   .footer__title {
     font-size: 116px;
-  }
-
-  .header__text {
-    margin-left: 0;
-    width: 100%;
   }
 
   .section-concentrate {
