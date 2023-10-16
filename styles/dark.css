@@ -12,7 +12,7 @@
   --paragraph-text-color: #FF0070;
   --lesser-paragraph-text-color: #000028;
   --active-button: #FF0070;
-  --recorder-visibility: unset;
+  --recorder-visibility: visible;
   --button-hover: #353430;
   --corner-color: #FF0070;
   --page-background-color: #000028;
@@ -27,7 +27,7 @@
     --paragraph-text-color: #FF0070;
     --lesser-paragraph-text-color: #000028;
     --active-button: #FF0070;
-    --recorder-visibility: unset;
+    --recorder-visibility: visible;
     --button-hover: #353430;
     --corner-color: #FF0070;
     --page-background-color: #000028;
