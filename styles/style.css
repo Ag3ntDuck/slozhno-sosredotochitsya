@@ -365,6 +365,14 @@ img {
     gap: 0px;
   }
 
+  .section-concentrate__title {
+    margin-right: 20px;
+  }
+
+  .section-recommendations__list-wrapper {
+    margin-bottom: 20px;
+  }
+
   .section-reduced__title {
     margin-bottom: 20px;
     margin-right: 20px;
