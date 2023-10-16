@@ -504,4 +504,8 @@ img {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .section-concentrate__dopamine {
+    margin-top: 0;
+  }
 }
