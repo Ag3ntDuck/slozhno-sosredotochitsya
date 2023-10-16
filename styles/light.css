@@ -16,6 +16,7 @@
   --recorder-visibility: none;
   --corner-color: #353430;
   --page-background-color: #FFF1F7;
+  --text-shadow: 4px 4px 0px #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,5 +32,18 @@
     --recorder-visibility: none;
     --corner-color: #353430;
     --page-background-color: #FFF1F7;
+  }
+}
+
+
+@media ((max-width: 768px) and (prefers-color-scheme: light)) {
+  .page {
+    --text-shadow: 4px 4px 0px #FF8DCB;
+  }
+}
+
+@media (max-width: 768px) {
+  .page.theme_light {
+    --text-shadow: 4px 4px 0px #FF8DCB;
   }
 }

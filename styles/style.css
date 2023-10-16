@@ -39,7 +39,7 @@
   align-self: center;
   color: var(--color-header-title, #FFC2E6);
   font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
-  text-shadow: 4px 4px 0px #FF0070;
+  text-shadow: var(--text-shadow);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
@@ -391,7 +391,7 @@ img {
     justify-content: end;
     align-items: end;
     flex-direction: column;
-    margin-top: 148px;
+    margin-top: 155px;
   }
 
   .footer__title {
