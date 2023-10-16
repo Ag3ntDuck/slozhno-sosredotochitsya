@@ -363,6 +363,11 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
     gap: 0px;
+    
+  }
+
+  .section-recommendations {
+    margin-top: 60px;
   }
 
   .section-concentrate__title {
