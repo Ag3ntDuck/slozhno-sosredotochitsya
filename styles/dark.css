@@ -16,7 +16,6 @@
   --button-hover: #353430;
   --corner-color: #FF0070;
   --page-background-color: #000028;
-  --text-shadow: 4px 4px 0px #FF0070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,9 +34,16 @@
   }
 }
 
+@media (width > 1px)  {
 
-@media (max-width: 768px) {
-  .page {
-    --text-shadow: 4px 4px 0px #FF0070;
+  .page.theme_dark {
+     --text-shadow: 4px 4px 0px #FF0070;
+   }
+ 
   }
-}
+ 
+  @media (prefers-color-scheme: dark) and (width > 1px) {
+    .page {
+      --text-shadow: 4px 4px 0px #FF0070;
+    }
+  }

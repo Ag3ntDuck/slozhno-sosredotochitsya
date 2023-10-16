@@ -16,7 +16,6 @@
   --recorder-visibility: none;
   --corner-color: #353430;
   --page-background-color: #FFF1F7;
-  --text-shadow: 4px 4px 0px #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,15 +34,29 @@
   }
 }
 
+@media  (width > 768px) {
 
-@media ((max-width: 768px) and (prefers-color-scheme: light)) {
+  .page.theme_light {
+    --text-shadow: 4px 4px 0px #FF0070;
+  }
+
+ }
+
+@media (width <= 768px) {
+  .page.theme_light {
+    --text-shadow:  4px 4px 0px #FF8DCB;
+   }
+  
+}
+
+@media (prefers-color-scheme: light) and (width > 768px) {
   .page {
-    --text-shadow: 4px 4px 0px #FF8DCB;
+    --text-shadow: 4px 4px 0px #FF0070;
   }
 }
 
-@media (max-width: 768px) {
-  .page.theme_light {
-    --text-shadow: 4px 4px 0px #FF8DCB;
-  }
+@media (prefers-color-scheme: light) and (width > 768px) {
+  .page {
+    --text-shadow:  4px 4px 0px #FF8DCB;
+   }
 }

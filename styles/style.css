@@ -39,7 +39,7 @@
   align-self: center;
   color: var(--color-header-title, #FFC2E6);
   font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow, 4px 4px 0px);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
@@ -285,7 +285,7 @@ img {
 .footer__title {
   text-align: center;
   color: var(--color-header-title, #FFC2E6);
-  text-shadow: 2px 2px 0px #FF0070;
+  text-shadow: 2px 2px 0px, var(--text-shadow, 2px 2px 0px);
   font-family: IBM Plex Mono;
   font-size: 157px;
   font-style: normal;
@@ -345,18 +345,15 @@ img {
 .recorder::after {
   content: "REC";
   position: absolute;
-  
   top: 0;
   right: 28px;
   color: #FF0070;
-
   font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
-
   display: var(--recorder-visibility, none);
 }
 
@@ -365,13 +362,14 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    gap: 0px;
   }
 
  .section-reduced__food {
   grid-row-start: 3;
   grid-column-start: 1;
   grid-column-end: 4;
-
+  
  }
 
   .section-reduced__gadgets {
