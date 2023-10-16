@@ -365,6 +365,13 @@ img {
     gap: 0px;
   }
 
+  .section-reduced__title {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+
+
  .section-reduced__food {
   grid-row-start: 3;
   grid-column-start: 1;
