@@ -4,13 +4,14 @@
   max-width: 1024px;
   background-color: var(--page-background-color, #fff1f7);
   background-repeat: no-repeat;
-  background-size: auto 100vh;
+  background-size: max(1440px, 100vw) 100vh;
   background-position-x: center;
   color: var(--text-color, #353430);
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
   padding: 20px;
   display: grid;
@@ -67,7 +68,7 @@
 }
 
 .header__text {
-  color: #353430;
+  color: var(--lesser-paragraph-text-color);
   font-family: var(
     --font-family,
     "Arial",
@@ -164,7 +165,13 @@
 }
 
 .paragraph_property {
-  font-family: IBM Plex Mono;
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -175,7 +182,13 @@
 }
 
 .title__paragraph_property {
-  font-family: IBM Plex Mono;
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   color: var(--paragraph-text-color, #353430);
   font-size: 18px;
   font-style: normal;
@@ -186,7 +199,13 @@
 
 .paragraph_property__lighter-weight {
   color: var(--lesser-paragraph-text-color, #353430);
-  font-family: IBM Plex Mono;
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -304,7 +323,13 @@ img {
   text-align: center;
   color: var(--color-header-title, #ffc2e6);
   text-shadow: 2px 2px 0px,var(--text-shadow);
-  font-family: IBM Plex Mono;
+  font-family: var(
+    --font-family,
+    "Arial",
+    "Helvetica",
+    "monospace",
+    sans-serif
+  );
   font-size: 157px;
   font-style: normal;
   font-weight: 700;
@@ -323,8 +348,14 @@ img {
 }
 
 .link:focus {
-  outline: 1px solid var(--text-color, #353430);
-  outline-offset: 0.3px;
+  border: 1px solid var(--link-focus);
+  outline: none;
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 0.3px solid var(--focus-button, #ff0070); 
+  outline: none;
+
 }
 
 .header__theme-menu-button:hover {
@@ -361,11 +392,9 @@ img {
 .recorder::after {
   content: "REC";
   position: absolute;
-
   top: 0;
   right: 28px;
   color: #ff0070;
-
   font-family: var(
     --font-family,
     "Arial",
@@ -382,11 +411,19 @@ img {
   display: var(--recorder-visibility, none);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
+  .section-concentrate {
+    gap: 20px;
+    row-gap: 10px;
+  }
+
   .section-reduced {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-reduced__title {
+    max-width: 30%;
   }
 
   .section-reduced__food {
@@ -424,7 +461,7 @@ img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .header {
     padding: 10px;
   }
