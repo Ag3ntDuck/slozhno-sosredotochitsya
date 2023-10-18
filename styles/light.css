@@ -11,10 +11,10 @@
   --background-color: #ff8dcb;
   --paragraph-text-color: #353430;
   --lesser-paragraph-text-color: #353430;
-  --focus-button: #FF0070;
+  --focus-button: #353430;
   --button-hover: #353430;
-  --link-focus: #F1B2CE;
   --active-button: #000028;
+  --link-focus: #353430;
   --recorder-visibility: none;
   --corner-color: #353430;
   --page-background-color: #fff1f7;
@@ -27,8 +27,8 @@
     background-image: url(../images/cover-image-light.png);
     --text-color: #353430;
     --background-color: #ff8dcb;
-    --link-focus: #F1B2CE;
-    --focus-button: #FF0070;
+    --link-focus: #353430;
+    --focus-button: #353430;
     --paragraph-text-color: #353430;
     --lesser-paragraph-text-color: #353430;
     --button-hover: #353430;
@@ -46,7 +46,7 @@
   }
 }
 
-@media (prefers-color-scheme: light) and (width <= 1023px) {
+@media (prefers-color-scheme: light) and (width <= 768px) {
   .page {
     --text-shadow: 4px 4px 0px #ff8dcb;
   }

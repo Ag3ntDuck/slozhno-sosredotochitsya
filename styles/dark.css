@@ -12,8 +12,8 @@
   --paragraph-text-color: #FF0070;
   --lesser-paragraph-text-color: #000028;
   --active-button: #FF0070;
-  --focus-button: #353430;
-  --link-focus: #353430;
+  --focus-button: #FF0070;
+  --link-focus: #F1B2CE;
   --recorder-visibility: visible;
   --button-hover: #ff0070;
   --corner-color: #FF0070;
@@ -28,8 +28,8 @@
     --text-color: #F1B2CE;
     --background-color: #FF0070;
     --paragraph-text-color: #FF0070;
-    --link-focus: #353430;
-    --focus-button: #353430;
+    --link-focus: #F1B2CE;
+    --focus-button: #FF0070;
     --lesser-paragraph-text-color: #000028;
     --active-button: #FF0070;
     --recorder-visibility: visible;
